@@ -34,7 +34,6 @@
 <script>
 // @ is an alias to /src
 import qwe from '../data.js'
-import hello from '../components/Hello'
 export default {
   name: 'home',
   data() {
@@ -71,18 +70,6 @@ export default {
       return this.pageNumber++
     },
   },
-  created(){
-    
-  },
-  components: {
-    hello
-  },
-  watch:{
-    qwe(){
-      const start = this.pageNumber * this.size;
-      const end = start + this.size;
-    }
-  }
 }
 </script>
 <style scope>
